@@ -13,10 +13,6 @@ sections:
   match: "**/*"
   templates:
   - diagnose
-- type: document
-  path: src/diagnosis/*.md
-  label: Diagnose
-  match: "**/*"
 - type: directory
   path: src/posts
   label: Posts
@@ -24,6 +20,10 @@ sections:
   match: "*.md"
   templates:
   - post
+- type: document
+  path: src/diagnosis/*.md
+  label: Diagnose
+  match: "**/*"
 - type: heading
   label: Globals
 - type: document
