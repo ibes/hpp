@@ -32,16 +32,6 @@ fields:
     min: 
     max: 
     step: 
-- name: duration-sickness
-  type: number
-  label: Dauer der Erkrankung
-  description: ''
-  default: 0
-  required: true
-  config:
-    min: 
-    max: 
-    step: 
 - name: sex
   type: select
   default: []
@@ -75,3 +65,28 @@ fields:
     min: 
     max: 
     step: 
+- name: duration-sickness
+  type: field_group
+  config: {}
+  fields:
+  - name: duration-sickness-min
+    type: number
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+    label: von
+  - name: duration-sickness-max
+    type: number
+    label: bis
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  label: Dauer der Erkrankung
