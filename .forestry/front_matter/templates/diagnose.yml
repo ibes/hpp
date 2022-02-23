@@ -22,9 +22,29 @@ fields:
     schema:
       format: markdown
   label: Symtomatik
-- name: duration-for-diagnosis
+- name: duration-to-diagnosis
   type: number
   label: Dauer bis Diagnose
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: duration-sickness-min
+  type: number
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+  label: Krankheitsdauer min
+- name: duration-sickness-max
+  type: number
+  label: Krankheitsdauer max
   description: ''
   default: 0
   required: true
@@ -57,7 +77,7 @@ fields:
   label: Synomnyme
 - name: lifeprevalence
   type: number
-  label: LebensPrävalenz
+  label: Lebens-Prävalenz
   description: ''
   default: 0
   required: true
@@ -65,30 +85,5 @@ fields:
     min: 
     max: 
     step: 
-- name: duration-sickness
-  type: field_group
-  config: {}
-  fields:
-  - name: duration-sickness-min
-    type: number
-    description: ''
-    default: 0
-    required: true
-    config:
-      min: 
-      max: 
-      step: 
-    label: von
-  - name: duration-sickness-max
-    type: number
-    label: bis
-    description: ''
-    default: 0
-    required: true
-    config:
-      min: 
-      max: 
-      step: 
-  label: Dauer der Erkrankung
 pages:
 - src/diagnosis/Burnout.md
