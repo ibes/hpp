@@ -26,7 +26,7 @@ fields:
   type: number
   label: Dauer bis Diagnose
   description: ''
-  default: 0
+  default: 
   required: true
   config:
     min: 
@@ -35,7 +35,7 @@ fields:
 - name: duration-sickness-min
   type: number
   description: ''
-  default: 0
+  default: 
   required: true
   config:
     min: 
@@ -46,7 +46,7 @@ fields:
   type: number
   label: Krankheitsdauer max
   description: ''
-  default: 0
+  default: 
   required: true
   config:
     min: 
@@ -54,7 +54,7 @@ fields:
     step: 
 - name: sex
   type: select
-  default: []
+  default: m=f
   config:
     required: false
     options:
@@ -78,8 +78,8 @@ fields:
 - name: lifeprevalence
   type: number
   label: Lebens-Prävalenz
-  description: ''
-  default: 0
+  description: in Prozent
+  default: 
   required: true
   config:
     min: 
