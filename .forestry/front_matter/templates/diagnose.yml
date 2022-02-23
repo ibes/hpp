@@ -1,18 +1,19 @@
 ---
 label: Diagnose
 hide_body: true
+display_field: bezeichnung
 fields:
-- name: bezeichnung
+- name: name
   type: text
   config:
     required: false
   label: Bezeichnung
-- name: schlussel
+- name: key
   type: text
   config:
     required: false
   label: Schlüssel
-- name: symtomatik
+- name: symtoms
   type: textarea
   default: ''
   config:
