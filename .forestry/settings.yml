@@ -7,6 +7,17 @@ sections:
 - type: heading
   label: Content
 - type: directory
+  path: src/diagnosis
+  label: Diagnosen
+  create: all
+  match: "**/*"
+  templates:
+  - diagnose
+- type: document
+  path: src/diagnosis/*.md
+  label: Diagnose
+  match: "**/*"
+- type: directory
   path: src/posts
   label: Posts
   create: documents
