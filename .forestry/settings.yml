@@ -23,7 +23,6 @@ sections:
 - type: document
   path: src/diagnosis/*.md
   label: Diagnose
-  match: "**/*"
 - type: heading
   label: Globals
 - type: document

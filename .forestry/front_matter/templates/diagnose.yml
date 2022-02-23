@@ -90,3 +90,5 @@ fields:
       max: 
       step: 
   label: Dauer der Erkrankung
+pages:
+- src/diagnosis/Burnout.md
